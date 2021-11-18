@@ -11,6 +11,8 @@ RUN apt-get update && \
 
 COPY package.json .
 
+RUN git config --global url.https://github.com/.insteadOf git://github.com/
+
 RUN npm install
 
 COPY . .
