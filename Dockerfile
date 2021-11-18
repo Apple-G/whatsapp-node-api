@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN git config --global url.https://github.com/.insteadOf git://github.com/
+RUN ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
 RUN npm install
 
