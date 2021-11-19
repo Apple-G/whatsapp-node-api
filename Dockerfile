@@ -3,6 +3,8 @@ FROM node:12.22.0-buster
 RUN apt-get update && \
   apt-get install -y \
   chromium \
+  chromium-browser \
+  chromium-codecs-ffmpeg \
   libatk-bridge2.0-0 \
   libxkbcommon0 \
   libwayland-client0 \
