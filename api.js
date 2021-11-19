@@ -17,7 +17,7 @@ process.title = "whatsapp-node-api";
 global.client = new Client({
     puppeteer: {
         headless: true,
-        executablePath: '/usr/bin/chromium-browser',
+        executablePath: '/usr/bin/chromium',
         args: [
             '--no-sandbox',
             '--disable-setuid-sandbox',
